@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Net;
@@ -222,6 +222,7 @@ Server: ShadowsocksR
 Content-Type: text/plain
 Content-Length: {0}
 Connection: Close
+Access-Control-Allow-Origin: *
 
 ", System.Text.Encoding.UTF8.GetBytes(content).Length) + content;
                         byte[] response = System.Text.Encoding.UTF8.GetBytes(text);
@@ -243,6 +244,7 @@ Server: ShadowsocksR
 Content-Type: text/plain
 Content-Length: {1}
 Connection: Close
+Access-Control-Allow-Origin: *
 
 ", ret_code, System.Text.Encoding.UTF8.GetBytes(content).Length) + content;
                             byte[] response = System.Text.Encoding.UTF8.GetBytes(text);
@@ -261,6 +263,7 @@ Server: ShadowsocksR
 Content-Type: text/plain
 Content-Length: {0}
 Connection: Close
+Access-Control-Allow-Origin: *
 
 ", System.Text.Encoding.UTF8.GetBytes(content).Length) + content;
                             byte[] response = System.Text.Encoding.UTF8.GetBytes(text);
