@@ -290,7 +290,7 @@ namespace Shadowsocks.Model
 
         public Server()
         {
-            server = "server host";
+            server = "按照网站教程添加订阅";
             server_port = 8388;
             method = "aes-256-cfb";
             protocol = "origin";
@@ -299,7 +299,7 @@ namespace Shadowsocks.Model
             obfsparam = "";
             password = "0";
             remarks_base64 = "";
-            group = "FreeSSR-public";
+            group = "请按照网站教程添加订阅";
             udp_over_tcp = false;
             enable = true;
             latency = LATENCY_PENDING;
