@@ -1,4 +1,4 @@
-﻿using Shadowsocks.Controller;
+using Shadowsocks.Controller;
 using System;
 using System.Collections.Generic;
 using System.Drawing;
@@ -389,9 +389,9 @@ namespace Shadowsocks.Model
             reconnectTimes = 2;
             keepVisitTime = 180;
             connectTimeout = 5;
-            dnsServer = "";
+            dnsServer = "1.1.1.1";
             localDnsServer = "";
-
+            localAuthPassword = "V2koRPB3l7Ehs76F_JhU";
             balanceAlgorithm = "LowException";
             random = false;
             sysProxyMode = (int)ProxyMode.Global;
@@ -402,7 +402,8 @@ namespace Shadowsocks.Model
             serverSubscribes = new List<ServerSubscribe>()
             {
             };
-
+            token = new Dictionary<string, string>();
+            token.Add("dukou", "dkisthebest");
             configs = new List<Server>()
             {
                 GetDefaultServer()
@@ -458,18 +459,18 @@ namespace Shadowsocks.Model
             }
             if (token == null)
             {
-                token = new Dictionary<string, string>();
+                token = new Dictionary<string, string>(); 
             }
             if (connectTimeout == 0)
             {
                 connectTimeout = 10;
                 reconnectTimes = 2;
-                TTL = 180;
+                TTL = 0;
                 keepVisitTime = 180;
             }
             if (localAuthPassword == null || localAuthPassword.Length < 16)
             {
-                localAuthPassword = randString(20);
+                localAuthPassword = "V2koRPB3l7Ehs76F_JhU";
             }
 
             Dictionary<string, int> id = new Dictionary<string, int>();
