@@ -1,4 +1,4 @@
-﻿using Shadowsocks.Controller;
+using Shadowsocks.Controller;
 using Shadowsocks.Model;
 using Shadowsocks.Properties;
 using System;
@@ -898,11 +898,11 @@ namespace Shadowsocks.View {
         }
 
         private void OpenWiki_Click(object sender, EventArgs e) {
-            Process.Start("https://github.com/shadowsocksrr/shadowsocks-rss/wiki");
+            Process.Start("https://github.com/Dukoucloud/SSRR-Windows/");
         }
 
         private void FeedbackItem_Click(object sender, EventArgs e) {
-            Process.Start("https://github.com/shadowsocksrr/shadowsocksr-csharp/issues/new");
+            Process.Start("https://github.com/Dukoucloud/SSRR-Windows/issues/new");
         }
 
         private void ResetPasswordItem_Click(object sender, EventArgs e) {
@@ -912,7 +912,7 @@ namespace Shadowsocks.View {
         }
 
         private void AboutItem_Click(object sender, EventArgs e) {
-            Process.Start("https://github.com/SoDa-GitHub/shadowsocksrr-csharp");
+            Process.Start("https://github.com/Dukoucloud/SSRR-Windows/");
         }
 
         private void DonateItem_Click(object sender, EventArgs e) {
