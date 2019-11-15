@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Drawing;
@@ -524,8 +524,8 @@ namespace Shadowsocks.Util
             if (offense_count != 0)
             {
                 //因为只有国行小白才会看到本消息，所以用中文就行了
-                MessageBox.Show(I18N.GetString("SSRR无法运行于安装有[360/2345/百度]产品的电脑，告辞！"));
-                return true;
+                MessageBox.Show(I18N.GetString("不建议您在安装有[360/2345/百度]产品的电脑上使用代理服务器！"));
+                return false;
             }
             return false;
         }
