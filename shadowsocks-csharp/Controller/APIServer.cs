@@ -222,7 +222,7 @@ Server: ShadowsocksR
 Content-Type: text/plain
 Content-Length: {0}
 Connection: Close
-Access-Control-Allow-Origin: *
+
 
 ", System.Text.Encoding.UTF8.GetBytes(content).Length) + content;
                         byte[] response = System.Text.Encoding.UTF8.GetBytes(text);
@@ -255,7 +255,8 @@ Access-Control-Allow-Origin: *
                         {
                             Dictionary<string, string> token = _config.token;
                             _config.token = new Dictionary<string, string>();
-                            string content = SimpleJson.SimpleJson.SerializeObject(_config);
+                            /**string content = SimpleJson.SimpleJson.SerializeObject(_config);**/
+                            string content = "";
                             _config.token = token;
 
                             string text = String.Format(@"HTTP/1.1 200 OK
