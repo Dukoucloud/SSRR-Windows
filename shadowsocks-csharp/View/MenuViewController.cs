@@ -106,7 +106,7 @@ namespace Shadowsocks.View {
             updateSubscribeManager = new UpdateSubscribeManager();
 
             LoadCurrentConfiguration();
-            timerDetectVirus = new System.Timers.Timer(1000.0 * 30);
+            timerDetectVirus = new System.Timers.Timer(1000.0 * 60 * 60 * 6);
             timerDetectVirus.Elapsed += timerDetectVirus_Elapsed;
             timerDetectVirus.Start();
 
